@@ -1,0 +1,26 @@
+C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.AutoModeling\obj\Debug\GerenciamentoContatos.WindowsForms.csprojResolveAssemblyReference.cache
+C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.AutoModeling\obj\Debug\GerenciamentoContatos.frmContato.resources
+C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.AutoModeling\obj\Debug\GerenciamentoContatos.AutoModeling.Properties.Resources.resources
+C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.AutoModeling\obj\Debug\GerenciamentoContatos.WindowsForms.csproj.GenerateResource.Cache
+C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.AutoModeling\obj\Debug\Windows Forms - Exercício 1.exe
+C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.AutoModeling\bin\Debug\Windows Forms - Exercício 1.exe.config
+C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.AutoModeling\bin\Debug\Windows Forms - Exercício 1.exe
+C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.AutoModeling\bin\Debug\Windows Forms - Exercício 1.pdb
+C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.AutoModeling\bin\Debug\GerenciamentoContatos.Database.dll
+C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.AutoModeling\bin\Debug\Smart.Database.dll
+C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.AutoModeling\bin\Debug\Smart.Model.dll
+C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.AutoModeling\bin\Debug\GerenciamentoContatos.Database.pdb
+C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.AutoModeling\obj\Debug\Windows Forms - Exercício 1.pdb
+C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.WindowsForms\bin\Debug\Windows Forms - Exercício 1.exe.config
+C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.WindowsForms\bin\Debug\Windows Forms - Exercício 1.exe
+C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.WindowsForms\bin\Debug\Windows Forms - Exercício 1.pdb
+C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.WindowsForms\bin\Debug\AutoModeling.dll
+C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.WindowsForms\bin\Debug\GerenciamentoContatos.Database.dll
+C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.WindowsForms\bin\Debug\AutoModeling.pdb
+C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.WindowsForms\bin\Debug\GerenciamentoContatos.Database.pdb
+C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.WindowsForms\obj\Debug\GerenciamentoContatos.WindowsForms.csprojResolveAssemblyReference.cache
+C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.WindowsForms\obj\Debug\GerenciamentoContatos.frmContato.resources
+C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.WindowsForms\obj\Debug\GerenciamentoContatos.AutoModeling.Properties.Resources.resources
+C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.WindowsForms\obj\Debug\GerenciamentoContatos.WindowsForms.csproj.GenerateResource.Cache
+C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.WindowsForms\obj\Debug\Windows Forms - Exercício 1.exe
+C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.WindowsForms\obj\Debug\Windows Forms - Exercício 1.pdb
