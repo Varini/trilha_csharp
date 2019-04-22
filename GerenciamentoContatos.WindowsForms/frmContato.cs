@@ -155,9 +155,21 @@ namespace GerenciamentoContatos
 
                 dRow = dtable.Rows.Add(RowValues);
             }
-            
+
+            if (!String.IsNullOrEmpty(busca))
+            {
+                DataTable tblFiltered = dtable.Clone();
+                var rows = dtable.AsEnumerable().Where(row => row.Field<String>("Nome").Contains(busca))
+                                                .OrderByDescending(row => row.Field<String>("Nome"));
+
+                foreach (var row in rows)
+                    tblFiltered.ImportRow(row);
+
+                dtable = tblFiltered;
+            }            
+
             dtable.AcceptChanges();
-            
+                        
             grvContato.DataSource = dtable;
 
             grvContato.Columns[7].Visible = false;
@@ -190,7 +202,7 @@ namespace GerenciamentoContatos
             return contato;
         }
 
-        private void buscarPorNome(object sender, EventArgs e)
+        private void buscarCadastro(object sender, EventArgs e)
         {
             carregarDados(txtBusca.Text);
         }  
