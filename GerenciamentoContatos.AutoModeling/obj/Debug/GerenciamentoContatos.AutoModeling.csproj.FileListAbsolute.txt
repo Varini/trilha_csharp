@@ -1,0 +1,6 @@
+C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.AutoModeling\bin\Debug\AutoModeling.dll
+C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.AutoModeling\bin\Debug\AutoModeling.pdb
+C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.AutoModeling\bin\Debug\Smart.Database.dll
+C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.AutoModeling\bin\Debug\Smart.Model.dll
+C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.AutoModeling\obj\Debug\AutoModeling.dll
+C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.AutoModeling\obj\Debug\AutoModeling.pdb
