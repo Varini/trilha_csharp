@@ -115,24 +115,24 @@ namespace GerenciamentoContatos
 
         private void carregarDados(string busca)
         {
-            List<ContatoInfo> listaContato = contatoBLL.Listar();
+            List<ContatoInfo> listContato = contatoBLL.Listar();
             
-            DataTable tabelaContatos = new DataTable();
+            DataTable dtable = new DataTable();
 
-            tabelaContatos.Columns.Add(new DataColumn("Nome"));
-            tabelaContatos.Columns.Add(new DataColumn("E-mail"));
-            tabelaContatos.Columns.Add(new DataColumn("Data de Nascimento"));
-            tabelaContatos.Columns.Add(new DataColumn("CPF"));
-            tabelaContatos.Columns.Add(new DataColumn("Cidade"));
-            tabelaContatos.Columns.Add(new DataColumn("Estado"));
-            tabelaContatos.Columns.Add(new DataColumn("Endereço"));
-            tabelaContatos.Columns.Add(new DataColumn("CdCidade"));
-            tabelaContatos.Columns.Add(new DataColumn("CdEstado"));
-            tabelaContatos.Columns.Add(new DataColumn("CdContato"));
+            dtable.Columns.Add(new DataColumn("Nome"));
+            dtable.Columns.Add(new DataColumn("E-mail"));
+            dtable.Columns.Add(new DataColumn("Data de Nascimento"));
+            dtable.Columns.Add(new DataColumn("CPF"));
+            dtable.Columns.Add(new DataColumn("Cidade"));
+            dtable.Columns.Add(new DataColumn("Estado"));
+            dtable.Columns.Add(new DataColumn("Endereço"));
+            dtable.Columns.Add(new DataColumn("CdCidade"));
+            dtable.Columns.Add(new DataColumn("CdEstado"));
+            dtable.Columns.Add(new DataColumn("CdContato"));
 
-            object[] linhasContato = new object[10];
+            object[] RowValues = new object[10];
 
-            foreach (ContatoInfo obj in listaContato)
+            foreach (ContatoInfo obj in listContato)
             {
                 CidadeInfo cidadeInfo = new CidadeInfo();
                 EstadoInfo estadoInfo = new EstadoInfo();
@@ -140,37 +140,37 @@ namespace GerenciamentoContatos
                 cidadeInfo = cidadeBLL.Get(obj.CdCidade.Value);
                 estadoInfo = estadoBLL.Get(obj.CdEstado.Value);
 
-                linhasContato[0] = obj.DsNome.Value;
-                linhasContato[1] = obj.DsEmail.Value;
-                linhasContato[2] = obj.DtNascimento.Value;
-                linhasContato[3] = obj.DsCpf.Value;
-                if (cidadeInfo != null) linhasContato[4] = cidadeInfo.DsCidade.Value;
-                if (estadoInfo != null) linhasContato[5] = estadoInfo.DsUf.Value;
-                linhasContato[6] = obj.DsEndereco.Value;
-                linhasContato[7] = obj.CdCidade.Value;
-                linhasContato[8] = obj.CdEstado.Value;                
-                linhasContato[9] = obj.CdContato.Value;
+                RowValues[0] = obj.DsNome.Value;
+                RowValues[1] = obj.DsEmail.Value;
+                RowValues[2] = obj.DtNascimento.Value;
+                RowValues[3] = obj.DsCpf.Value;
+                if (cidadeInfo != null) RowValues[4] = cidadeInfo.DsCidade.Value;
+                if (estadoInfo != null) RowValues[5] = estadoInfo.DsUf.Value;
+                RowValues[6] = obj.DsEndereco.Value;
+                RowValues[7] = obj.CdCidade.Value;
+                RowValues[8] = obj.CdEstado.Value;                
+                RowValues[9] = obj.CdContato.Value;
 
-                DataRow linha;
+                DataRow dRow;
 
-                linha = tabelaContatos.Rows.Add(linhasContato);
+                dRow = dtable.Rows.Add(RowValues);
             }
 
             if (!String.IsNullOrEmpty(busca))
             {
-                DataTable tabelaBusca = tabelaContatos.Clone();
-                var linhas = tabelaContatos.AsEnumerable().Where(row => row.Field<String>("Nome").Contains(busca))
-                                                .OrderBy(row => row.Field<String>("Nome"));
+                DataTable tblFiltered = dtable.Clone();
+                var rows = dtable.AsEnumerable().Where(row => row.Field<String>("Nome").Contains(busca))
+                                                .OrderByDescending(row => row.Field<String>("Nome"));
 
-                foreach (var linha in linhas)
-                    tabelaBusca.ImportRow(linha);
+                foreach (var row in rows)
+                    tblFiltered.ImportRow(row);
 
-                tabelaContatos = tabelaBusca;
+                dtable = tblFiltered;
             }            
 
-            tabelaContatos.AcceptChanges();
+            dtable.AcceptChanges();
                         
-            grvContato.DataSource = tabelaContatos;
+            grvContato.DataSource = dtable;
 
             grvContato.Columns[7].Visible = false;
             grvContato.Columns[8].Visible = false;
