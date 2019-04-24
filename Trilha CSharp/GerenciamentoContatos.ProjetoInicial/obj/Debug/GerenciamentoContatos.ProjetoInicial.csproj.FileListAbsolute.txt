@@ -25,3 +25,12 @@ C:\git\TreinamentoLeonardo\GerenciamentoContatos.ProjetoInicial\obj\Debug\Gerenc
 C:\git\TreinamentoLeonardo\GerenciamentoContatos.ProjetoInicial\obj\Debug\GerenciamentoContatos.ProjetoInicial.csproj.GenerateResource.Cache
 C:\git\TreinamentoLeonardo\GerenciamentoContatos.ProjetoInicial\obj\Debug\Windows Forms - Exercício 1.exe
 C:\git\TreinamentoLeonardo\GerenciamentoContatos.ProjetoInicial\obj\Debug\Windows Forms - Exercício 1.pdb
+C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.ProjetoInicial\bin\Debug\Windows Forms - Exercício 1.exe.config
+C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.ProjetoInicial\obj\Debug\Windows Forms - Exercício 1.exe
+C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.ProjetoInicial\obj\Debug\Windows Forms - Exercício 1.pdb
+C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.ProjetoInicial\bin\Debug\Windows Forms - Exercício 1.exe
+C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.ProjetoInicial\bin\Debug\Windows Forms - Exercício 1.pdb
+C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.ProjetoInicial\obj\Debug\GerenciamentoContatos.ProjetoInicial.csprojResolveAssemblyReference.cache
+C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.ProjetoInicial\obj\Debug\GerenciamentoContatos.frmContato.resources
+C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.ProjetoInicial\obj\Debug\GerenciamentoContatos.Properties.Resources.resources
+C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.ProjetoInicial\obj\Debug\GerenciamentoContatos.ProjetoInicial.csproj.GenerateResource.Cache

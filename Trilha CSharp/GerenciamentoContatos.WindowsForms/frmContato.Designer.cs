@@ -144,7 +144,6 @@
             this.ddlEstado.Name = "ddlEstado";
             this.ddlEstado.Size = new System.Drawing.Size(248, 21);
             this.ddlEstado.TabIndex = 6;
-            this.ddlEstado.Text = "Selecione o estado...";
             // 
             // txtEndereco
             // 

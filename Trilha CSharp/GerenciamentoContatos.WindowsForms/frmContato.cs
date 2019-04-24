@@ -35,12 +35,13 @@ namespace GerenciamentoContatos
             List<EstadoInfo> listaEstado = estadoBLL.Listar();
 
             ddlEstado.Items.Clear();
-
+            
+            ddlEstado.Items.Add("Selecione o estado...");
             foreach (EstadoInfo obj in listaEstado){
                 ddlEstado.Items.Add(obj.DsEstado.Value + " - " + obj.DsUf.Value);            
             }
-            ddlEstado.Text = "Selecione o estado...";            
-
+            ddlEstado.SelectedIndex = 0;
+            
             carregarDados(String.Empty); 
 
             foreach (DataGridViewBand band in grvContato.Columns)
@@ -194,10 +195,10 @@ namespace GerenciamentoContatos
             contato.Contato.DtNascimento.Value = data;
             contato.Contato.DsCpf.Value = txtCPF.Text.Trim();
             contato.Contato.DsCpf.Value = contato.Contato.DsCpf.Value.Replace(",", "").Replace("-", "");
-            contato.Contato.CdEstado.Value = ((ddlEstado.SelectedIndex)) + 1;
+            contato.Contato.CdEstado.Value = ((ddlEstado.SelectedIndex));
             contato.Contato.DsEndereco.Value = txtEndereco.Text;
             contato.Cidade.DsCidade.Value = txtCidade.Text;
-            contato.Cidade.CdEstado.Value = ((ddlEstado.SelectedIndex)) + 1;
+            contato.Cidade.CdEstado.Value = ((ddlEstado.SelectedIndex));
 
             return contato;
         }
@@ -221,11 +222,12 @@ namespace GerenciamentoContatos
 
             ddlEstado.Items.Clear();
 
+            ddlEstado.Items.Add("Selecione o estado...");
             foreach (EstadoInfo obj in listaEstado)
             {
                 ddlEstado.Items.Add(obj.DsEstado.Value + " - " + obj.DsUf.Value);
             }
-            ddlEstado.Text = "Selecione o estado...";
+            ddlEstado.SelectedIndex = 0;
 
             idContato = 0;
             idCidade = 0;
@@ -321,7 +323,7 @@ namespace GerenciamentoContatos
                 txtCidade.Text = grvContato.Rows[e.RowIndex].Cells[4].Value.ToString();
                 txtEndereco.Text = grvContato.Rows[e.RowIndex].Cells[6].Value.ToString();
 
-                ddlEstado.SelectedIndex = System.Convert.ToInt32(grvContato.Rows[e.RowIndex].Cells[8].Value) - 1;
+                ddlEstado.SelectedIndex = System.Convert.ToInt32(grvContato.Rows[e.RowIndex].Cells[8].Value);
 
                 btnExcluir.Visible = true;
             }
