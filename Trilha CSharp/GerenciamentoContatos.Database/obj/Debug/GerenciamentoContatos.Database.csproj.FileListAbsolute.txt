@@ -1,5 +1,0 @@
-C:\git\treinamentoleonardo\Trilha CSharp\GerenciamentoContatos.Database\bin\Debug\GerenciamentoContatos.Database.dll
-C:\git\treinamentoleonardo\Trilha CSharp\GerenciamentoContatos.Database\bin\Debug\GerenciamentoContatos.Database.pdb
-C:\git\treinamentoleonardo\Trilha CSharp\GerenciamentoContatos.Database\bin\Debug\Smart.Database.dll
-C:\git\treinamentoleonardo\Trilha CSharp\GerenciamentoContatos.Database\obj\Debug\GerenciamentoContatos.Database.dll
-C:\git\treinamentoleonardo\Trilha CSharp\GerenciamentoContatos.Database\obj\Debug\GerenciamentoContatos.Database.pdb
