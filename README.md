@@ -1,7 +1,9 @@
-#Treinamento - Trilha C#. 
+#Projetos de Treinamento
 
-#Itens
-1 - Projeto Inicial
-2 - Windows Forms
-3 - Database
-4 - Auto Modeling
+Treinamento - Trilha CSharp:
+
+	Itens
+	1 - Projeto Inicial
+	2 - Windows Forms
+	3 - Database
+	4 - Auto Modeling
