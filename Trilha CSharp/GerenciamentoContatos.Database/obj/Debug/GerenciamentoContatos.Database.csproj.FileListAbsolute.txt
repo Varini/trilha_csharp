@@ -1,15 +1,5 @@
-C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.Database\bin\Debug\GerenciamentoContatos.Database.dll
-C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.Database\bin\Debug\GerenciamentoContatos.Database.pdb
-C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.Database\bin\Debug\Smart.Database.dll
-C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.Database\obj\Debug\GerenciamentoContatos.Database.dll
-C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.Database\obj\Debug\GerenciamentoContatos.Database.pdb
-C:\git\TreinamentoLeonardo\GerenciamentoContatos.Database\bin\Debug\GerenciamentoContatos.Database.dll
-C:\git\TreinamentoLeonardo\GerenciamentoContatos.Database\bin\Debug\GerenciamentoContatos.Database.pdb
-C:\git\TreinamentoLeonardo\GerenciamentoContatos.Database\bin\Debug\Smart.Database.dll
-C:\git\TreinamentoLeonardo\GerenciamentoContatos.Database\obj\Debug\GerenciamentoContatos.Database.dll
-C:\git\TreinamentoLeonardo\GerenciamentoContatos.Database\obj\Debug\GerenciamentoContatos.Database.pdb
-C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Database\bin\Debug\GerenciamentoContatos.Database.dll
-C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Database\bin\Debug\GerenciamentoContatos.Database.pdb
-C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Database\bin\Debug\Smart.Database.dll
-C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Database\obj\Debug\GerenciamentoContatos.Database.dll
-C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Database\obj\Debug\GerenciamentoContatos.Database.pdb
+C:\git\treinamentoleonardo\Trilha CSharp\GerenciamentoContatos.Database\bin\Debug\GerenciamentoContatos.Database.dll
+C:\git\treinamentoleonardo\Trilha CSharp\GerenciamentoContatos.Database\bin\Debug\GerenciamentoContatos.Database.pdb
+C:\git\treinamentoleonardo\Trilha CSharp\GerenciamentoContatos.Database\bin\Debug\Smart.Database.dll
+C:\git\treinamentoleonardo\Trilha CSharp\GerenciamentoContatos.Database\obj\Debug\GerenciamentoContatos.Database.dll
+C:\git\treinamentoleonardo\Trilha CSharp\GerenciamentoContatos.Database\obj\Debug\GerenciamentoContatos.Database.pdb

@@ -1,5 +1,0 @@
-C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.MVC\obj\Debug\GerenciamentoContatos.frmContato.resources
-C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.MVC\obj\Debug\GerenciamentoContatos.MVC.Properties.Resources.resources
-C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.MVC\obj\Debug\GerenciamentoContatos.MVC.csproj.GenerateResource.Cache
-C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.MVC\bin\Debug\Windows Forms - Exercício 1.exe.config
-C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.MVC\obj\Debug\GerenciamentoContatos.MVC.csprojResolveAssemblyReference.cache

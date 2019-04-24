@@ -1,52 +1,14 @@
-C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.AutoModeling\obj\Debug\GerenciamentoContatos.WindowsForms.csprojResolveAssemblyReference.cache
-C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.AutoModeling\obj\Debug\GerenciamentoContatos.frmContato.resources
-C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.AutoModeling\obj\Debug\GerenciamentoContatos.AutoModeling.Properties.Resources.resources
-C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.AutoModeling\obj\Debug\GerenciamentoContatos.WindowsForms.csproj.GenerateResource.Cache
-C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.AutoModeling\obj\Debug\Windows Forms - Exercício 1.exe
-C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.AutoModeling\bin\Debug\Windows Forms - Exercício 1.exe.config
-C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.AutoModeling\bin\Debug\Windows Forms - Exercício 1.exe
-C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.AutoModeling\bin\Debug\Windows Forms - Exercício 1.pdb
-C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.AutoModeling\bin\Debug\GerenciamentoContatos.Database.dll
-C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.AutoModeling\bin\Debug\Smart.Database.dll
-C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.AutoModeling\bin\Debug\Smart.Model.dll
-C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.AutoModeling\bin\Debug\GerenciamentoContatos.Database.pdb
-C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.AutoModeling\obj\Debug\Windows Forms - Exercício 1.pdb
-C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.WindowsForms\bin\Debug\Windows Forms - Exercício 1.exe.config
-C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.WindowsForms\bin\Debug\Windows Forms - Exercício 1.exe
-C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.WindowsForms\bin\Debug\Windows Forms - Exercício 1.pdb
-C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.WindowsForms\bin\Debug\AutoModeling.dll
-C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.WindowsForms\bin\Debug\GerenciamentoContatos.Database.dll
-C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.WindowsForms\bin\Debug\AutoModeling.pdb
-C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.WindowsForms\bin\Debug\GerenciamentoContatos.Database.pdb
-C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.WindowsForms\obj\Debug\GerenciamentoContatos.WindowsForms.csprojResolveAssemblyReference.cache
-C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.WindowsForms\obj\Debug\GerenciamentoContatos.frmContato.resources
-C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.WindowsForms\obj\Debug\GerenciamentoContatos.AutoModeling.Properties.Resources.resources
-C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.WindowsForms\obj\Debug\GerenciamentoContatos.WindowsForms.csproj.GenerateResource.Cache
-C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.WindowsForms\obj\Debug\Windows Forms - Exercício 1.exe
-C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.WindowsForms\obj\Debug\Windows Forms - Exercício 1.pdb
-C:\git\TreinamentoLeonardo\GerenciamentoContatos.WindowsForms\bin\Debug\Windows Forms - Exercício 1.exe.config
-C:\git\TreinamentoLeonardo\GerenciamentoContatos.WindowsForms\bin\Debug\Windows Forms - Exercício 1.exe
-C:\git\TreinamentoLeonardo\GerenciamentoContatos.WindowsForms\bin\Debug\Windows Forms - Exercício 1.pdb
-C:\git\TreinamentoLeonardo\GerenciamentoContatos.WindowsForms\bin\Debug\AutoModeling.dll
-C:\git\TreinamentoLeonardo\GerenciamentoContatos.WindowsForms\bin\Debug\GerenciamentoContatos.Database.dll
-C:\git\TreinamentoLeonardo\GerenciamentoContatos.WindowsForms\bin\Debug\AutoModeling.pdb
-C:\git\TreinamentoLeonardo\GerenciamentoContatos.WindowsForms\bin\Debug\GerenciamentoContatos.Database.pdb
-C:\git\TreinamentoLeonardo\GerenciamentoContatos.WindowsForms\obj\Debug\GerenciamentoContatos.WindowsForms.csprojResolveAssemblyReference.cache
-C:\git\TreinamentoLeonardo\GerenciamentoContatos.WindowsForms\obj\Debug\GerenciamentoContatos.frmContato.resources
-C:\git\TreinamentoLeonardo\GerenciamentoContatos.WindowsForms\obj\Debug\GerenciamentoContatos.AutoModeling.Properties.Resources.resources
-C:\git\TreinamentoLeonardo\GerenciamentoContatos.WindowsForms\obj\Debug\GerenciamentoContatos.WindowsForms.csproj.GenerateResource.Cache
-C:\git\TreinamentoLeonardo\GerenciamentoContatos.WindowsForms\obj\Debug\Windows Forms - Exercício 1.exe
-C:\git\TreinamentoLeonardo\GerenciamentoContatos.WindowsForms\obj\Debug\Windows Forms - Exercício 1.pdb
-C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\Windows Forms - Exercício 1.exe.config
-C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\obj\Debug\Windows Forms - Exercício 1.exe
-C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\obj\Debug\Windows Forms - Exercício 1.pdb
-C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\obj\Debug\GerenciamentoContatos.WindowsForms.csprojResolveAssemblyReference.cache
-C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\obj\Debug\GerenciamentoContatos.frmContato.resources
-C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\obj\Debug\GerenciamentoContatos.AutoModeling.Properties.Resources.resources
-C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\obj\Debug\GerenciamentoContatos.WindowsForms.csproj.GenerateResource.Cache
-C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\Windows Forms - Exercício 1.exe
-C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\Windows Forms - Exercício 1.pdb
-C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\AutoModeling.dll
-C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\GerenciamentoContatos.Database.dll
-C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\AutoModeling.pdb
-C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\GerenciamentoContatos.Database.pdb
+C:\git\treinamentoleonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\Windows Forms - Exercício 1.exe.config
+C:\git\treinamentoleonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\Windows Forms - Exercício 1.exe
+C:\git\treinamentoleonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\Windows Forms - Exercício 1.pdb
+C:\git\treinamentoleonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\AutoModeling.dll
+C:\git\treinamentoleonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\GerenciamentoContatos.Database.dll
+C:\git\treinamentoleonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\Smart.Database.dll
+C:\git\treinamentoleonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\Smart.Model.dll
+C:\git\treinamentoleonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\AutoModeling.pdb
+C:\git\treinamentoleonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\GerenciamentoContatos.Database.pdb
+C:\git\treinamentoleonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\obj\Debug\GerenciamentoContatos.WindowsForms.csprojResolveAssemblyReference.cache
+C:\git\treinamentoleonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\obj\Debug\GerenciamentoContatos.frmContato.resources
+C:\git\treinamentoleonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\obj\Debug\GerenciamentoContatos.WindowsForms.csproj.GenerateResource.Cache
+C:\git\treinamentoleonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\obj\Debug\Windows Forms - Exercício 1.exe
+C:\git\treinamentoleonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\obj\Debug\Windows Forms - Exercício 1.pdb
