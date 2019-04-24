@@ -25,8 +25,6 @@ C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\Geren
 C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.WindowsForms\obj\Debug\Windows Forms - Exercício 1.exe
 C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.WindowsForms\obj\Debug\Windows Forms - Exercício 1.pdb
 C:\git\TreinamentoLeonardo\GerenciamentoContatos.WindowsForms\bin\Debug\Windows Forms - Exercício 1.exe.config
-C:\git\TreinamentoLeonardo\GerenciamentoContatos.WindowsForms\obj\Debug\Windows Forms - Exercício 1.exe
-C:\git\TreinamentoLeonardo\GerenciamentoContatos.WindowsForms\obj\Debug\Windows Forms - Exercício 1.pdb
 C:\git\TreinamentoLeonardo\GerenciamentoContatos.WindowsForms\bin\Debug\Windows Forms - Exercício 1.exe
 C:\git\TreinamentoLeonardo\GerenciamentoContatos.WindowsForms\bin\Debug\Windows Forms - Exercício 1.pdb
 C:\git\TreinamentoLeonardo\GerenciamentoContatos.WindowsForms\bin\Debug\AutoModeling.dll
@@ -37,3 +35,5 @@ C:\git\TreinamentoLeonardo\GerenciamentoContatos.WindowsForms\obj\Debug\Gerencia
 C:\git\TreinamentoLeonardo\GerenciamentoContatos.WindowsForms\obj\Debug\GerenciamentoContatos.frmContato.resources
 C:\git\TreinamentoLeonardo\GerenciamentoContatos.WindowsForms\obj\Debug\GerenciamentoContatos.AutoModeling.Properties.Resources.resources
 C:\git\TreinamentoLeonardo\GerenciamentoContatos.WindowsForms\obj\Debug\GerenciamentoContatos.WindowsForms.csproj.GenerateResource.Cache
+C:\git\TreinamentoLeonardo\GerenciamentoContatos.WindowsForms\obj\Debug\Windows Forms - Exercício 1.exe
+C:\git\TreinamentoLeonardo\GerenciamentoContatos.WindowsForms\obj\Debug\Windows Forms - Exercício 1.pdb

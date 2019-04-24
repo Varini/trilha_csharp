@@ -16,3 +16,12 @@ C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\Geren
 C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.ProjetoInicial\obj\Debug\GerenciamentoContatos.frmContato.resources
 C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.ProjetoInicial\obj\Debug\GerenciamentoContatos.Properties.Resources.resources
 C:\Users\leonardo.varini\Documents\Visual Studio 2012\Projects\Treinamento\GerenciamentoContatos.ProjetoInicial\obj\Debug\GerenciamentoContatos.ProjetoInicial.csproj.GenerateResource.Cache
+C:\git\TreinamentoLeonardo\GerenciamentoContatos.ProjetoInicial\bin\Debug\Windows Forms - Exercício 1.exe.config
+C:\git\TreinamentoLeonardo\GerenciamentoContatos.ProjetoInicial\bin\Debug\Windows Forms - Exercício 1.exe
+C:\git\TreinamentoLeonardo\GerenciamentoContatos.ProjetoInicial\bin\Debug\Windows Forms - Exercício 1.pdb
+C:\git\TreinamentoLeonardo\GerenciamentoContatos.ProjetoInicial\obj\Debug\GerenciamentoContatos.ProjetoInicial.csprojResolveAssemblyReference.cache
+C:\git\TreinamentoLeonardo\GerenciamentoContatos.ProjetoInicial\obj\Debug\GerenciamentoContatos.frmContato.resources
+C:\git\TreinamentoLeonardo\GerenciamentoContatos.ProjetoInicial\obj\Debug\GerenciamentoContatos.Properties.Resources.resources
+C:\git\TreinamentoLeonardo\GerenciamentoContatos.ProjetoInicial\obj\Debug\GerenciamentoContatos.ProjetoInicial.csproj.GenerateResource.Cache
+C:\git\TreinamentoLeonardo\GerenciamentoContatos.ProjetoInicial\obj\Debug\Windows Forms - Exercício 1.exe
+C:\git\TreinamentoLeonardo\GerenciamentoContatos.ProjetoInicial\obj\Debug\Windows Forms - Exercício 1.pdb

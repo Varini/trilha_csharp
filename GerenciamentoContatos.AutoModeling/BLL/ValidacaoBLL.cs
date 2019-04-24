@@ -21,7 +21,7 @@ namespace GerenciamentoContatos.BLL
             int resto;
 
             cpf = cpf.Trim();
-            cpf = cpf.Replace(",", "").Replace("-", "");
+            cpf = new String(cpf.Where(Char.IsDigit).ToArray());
 
             if (cpf.Length != 11)
                 return false;
