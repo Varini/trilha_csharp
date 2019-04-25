@@ -1,8 +1,0 @@
-C:\git\treinamentoleonardo\Trilha CSharp\GerenciamentoContatos.ProjetoInicial\bin\Debug\Windows Forms - Exercício 1.exe.config
-C:\git\treinamentoleonardo\Trilha CSharp\GerenciamentoContatos.ProjetoInicial\bin\Debug\Windows Forms - Exercício 1.exe
-C:\git\treinamentoleonardo\Trilha CSharp\GerenciamentoContatos.ProjetoInicial\bin\Debug\Windows Forms - Exercício 1.pdb
-C:\git\treinamentoleonardo\Trilha CSharp\GerenciamentoContatos.ProjetoInicial\obj\Debug\GerenciamentoContatos.frmContato.resources
-C:\git\treinamentoleonardo\Trilha CSharp\GerenciamentoContatos.ProjetoInicial\obj\Debug\GerenciamentoContatos.Properties.Resources.resources
-C:\git\treinamentoleonardo\Trilha CSharp\GerenciamentoContatos.ProjetoInicial\obj\Debug\GerenciamentoContatos.ProjetoInicial.csproj.GenerateResource.Cache
-C:\git\treinamentoleonardo\Trilha CSharp\GerenciamentoContatos.ProjetoInicial\obj\Debug\Windows Forms - Exercício 1.exe
-C:\git\treinamentoleonardo\Trilha CSharp\GerenciamentoContatos.ProjetoInicial\obj\Debug\Windows Forms - Exercício 1.pdb

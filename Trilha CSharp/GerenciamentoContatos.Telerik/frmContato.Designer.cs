@@ -38,28 +38,29 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtNome = new Telerik.WinControls.UI.RadTextBox();
             this.txtCidade = new Telerik.WinControls.UI.RadTextBox();
-            this.ddlEstado = new System.Windows.Forms.ComboBox();
+            this.ddlEstado = new Telerik.WinControls.UI.RadDropDownList();
             this.txtEndereco = new Telerik.WinControls.UI.RadTextBox();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.txtCPF = new Telerik.WinControls.UI.RadMaskedEditBox();
             this.eprValidacao = new System.Windows.Forms.ErrorProvider(this.components);
             this.txtEmail = new Telerik.WinControls.UI.RadTextBox();
-            this.txtDtNasc = new Telerik.WinControls.UI.RadMaskedEditBox();
             this.grvContato = new System.Windows.Forms.DataGridView();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.txtBusca = new Telerik.WinControls.UI.RadTextBox();
             this.lblFiltro = new System.Windows.Forms.Label();
+            this.txtDtNasc = new Telerik.WinControls.UI.RadMaskedEditBox();
             ((System.ComponentModel.ISupportInitialize)(this.txtNome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCidade)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ddlEstado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEndereco)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCPF)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eprValidacao)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmail)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDtNasc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grvContato)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtBusca)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDtNasc)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNome
@@ -147,11 +148,12 @@
             // ddlEstado
             // 
             this.ddlEstado.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.ddlEstado.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.ddlEstado.FormattingEnabled = true;
+            this.ddlEstado.DropDownAnimationEnabled = true;
             this.ddlEstado.Location = new System.Drawing.Point(142, 174);
+            this.ddlEstado.MaxDropDownItems = 0;
             this.ddlEstado.Name = "ddlEstado";
-            this.ddlEstado.Size = new System.Drawing.Size(248, 21);
+            this.ddlEstado.ShowImageInEditorArea = true;
+            this.ddlEstado.Size = new System.Drawing.Size(248, 20);
             this.ddlEstado.TabIndex = 6;
             // 
             // txtEndereco
@@ -192,11 +194,13 @@
             // 
             this.txtCPF.AutoSize = true;
             this.txtCPF.Location = new System.Drawing.Point(142, 116);
-            this.txtCPF.Mask = "000.000.000-00";
+            this.txtCPF.Mask = "999.999.999-99";
+            this.txtCPF.MaskType = Telerik.WinControls.UI.MaskType.Standard;
             this.txtCPF.Name = "txtCPF";
             this.txtCPF.Size = new System.Drawing.Size(100, 20);
             this.txtCPF.TabIndex = 4;
             this.txtCPF.TabStop = false;
+            this.txtCPF.Text = "___,___,___-__";
             // 
             // eprValidacao
             // 
@@ -211,16 +215,6 @@
             this.txtEmail.Size = new System.Drawing.Size(248, 18);
             this.txtEmail.TabIndex = 2;
             this.txtEmail.TabStop = false;
-            // 
-            // txtDtNasc
-            // 
-            this.txtDtNasc.AutoSize = true;
-            this.txtDtNasc.Location = new System.Drawing.Point(142, 87);
-            this.txtDtNasc.Mask = "00/00/0000";
-            this.txtDtNasc.Name = "txtDtNasc";
-            this.txtDtNasc.Size = new System.Drawing.Size(100, 20);
-            this.txtDtNasc.TabIndex = 3;
-            this.txtDtNasc.TabStop = false;
             // 
             // grvContato
             // 
@@ -272,11 +266,24 @@
             this.lblFiltro.TabIndex = 15;
             this.lblFiltro.Text = "Filtro:";
             // 
+            // txtDtNasc
+            // 
+            this.txtDtNasc.AutoSize = true;
+            this.txtDtNasc.Location = new System.Drawing.Point(142, 86);
+            this.txtDtNasc.Mask = "00/00/0000";
+            this.txtDtNasc.MaskType = Telerik.WinControls.UI.MaskType.Standard;
+            this.txtDtNasc.Name = "txtDtNasc";
+            this.txtDtNasc.Size = new System.Drawing.Size(100, 20);
+            this.txtDtNasc.TabIndex = 3;
+            this.txtDtNasc.TabStop = false;
+            this.txtDtNasc.Text = "__/__/____";
+            // 
             // frmContato
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(769, 525);
+            this.Controls.Add(this.txtDtNasc);
             this.Controls.Add(this.lblFiltro);
             this.Controls.Add(this.txtBusca);
             this.Controls.Add(this.btnBuscar);
@@ -284,7 +291,6 @@
             this.Controls.Add(this.grvContato);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtCPF);
-            this.Controls.Add(this.txtDtNasc);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.txtEndereco);
@@ -304,13 +310,14 @@
             this.Load += new System.EventHandler(this.carregarFrmContato);
             ((System.ComponentModel.ISupportInitialize)(this.txtNome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCidade)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ddlEstado)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEndereco)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCPF)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.eprValidacao)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmail)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDtNasc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grvContato)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtBusca)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDtNasc)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -327,19 +334,19 @@
         private System.Windows.Forms.Label label7;
         private Telerik.WinControls.UI.RadTextBox txtNome;
         private Telerik.WinControls.UI.RadTextBox txtCidade;
-        private System.Windows.Forms.ComboBox ddlEstado;
+        private Telerik.WinControls.UI.RadDropDownList ddlEstado;
         private Telerik.WinControls.UI.RadTextBox txtEndereco;
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Button btnLimpar;
         private Telerik.WinControls.UI.RadMaskedEditBox  txtCPF;
         private System.Windows.Forms.ErrorProvider eprValidacao;
         private Telerik.WinControls.UI.RadTextBox txtEmail;
-        private Telerik.WinControls.UI.RadMaskedEditBox  txtDtNasc;
         private System.Windows.Forms.DataGridView grvContato;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Label lblFiltro;
         private Telerik.WinControls.UI.RadTextBox txtBusca;
+        private Telerik.WinControls.UI.RadMaskedEditBox txtDtNasc;
     }
 }
 

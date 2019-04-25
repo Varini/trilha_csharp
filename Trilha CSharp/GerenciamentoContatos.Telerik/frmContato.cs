@@ -48,7 +48,7 @@ namespace GerenciamentoContatos
             foreach (DataGridViewBand band in grvContato.Columns)
             {
                 band.ReadOnly = true;
-            }
+            }            
         }
 
         private void cadastrarContato(object sender, EventArgs e)
@@ -123,10 +123,10 @@ namespace GerenciamentoContatos
 
             tabelaContatos.Columns.Add(new DataColumn("Nome"));
             tabelaContatos.Columns.Add(new DataColumn("E-mail"));
-            tabelaContatos.Columns.Add(new DataColumn("Data de Nascimento"));
+            tabelaContatos.Columns.Add(new DataColumn("Data de Nascimento", typeof (DateTime)));
             tabelaContatos.Columns.Add(new DataColumn("CPF"));
             tabelaContatos.Columns.Add(new DataColumn("Cidade"));
-            tabelaContatos.Columns.Add(new DataColumn("Estado"));
+            tabelaContatos.Columns.Add(new DataColumn("UF"));
             tabelaContatos.Columns.Add(new DataColumn("Endereço"));
             tabelaContatos.Columns.Add(new DataColumn("CdCidade"));
             tabelaContatos.Columns.Add(new DataColumn("CdEstado"));
@@ -144,7 +144,7 @@ namespace GerenciamentoContatos
 
                 linhasContato[0] = obj.DsNome.Value;
                 linhasContato[1] = obj.DsEmail.Value;
-                linhasContato[2] = obj.DtNascimento.Value;
+                linhasContato[2] = obj.DtNascimento.Value.Date.Day + "/" + obj.DtNascimento.Value.Date.Month + "/" + obj.DtNascimento.Value.Date.Year;
                 linhasContato[3] = obj.DsCpf.Value;
                 if (cidadeInfo != null) linhasContato[4] = cidadeInfo.DsCidade.Value;
                 if (estadoInfo != null) linhasContato[5] = estadoInfo.DsUf.Value;
@@ -173,6 +173,18 @@ namespace GerenciamentoContatos
             tabelaContatos.AcceptChanges();
                         
             grvContato.DataSource = tabelaContatos;
+
+
+            DataGridViewColumn ID_Column = grvContato.Columns[5]; // Coluna UF
+            ID_Column.Width = 30;
+            ID_Column = grvContato.Columns[1]; // Coluna E-mail
+            ID_Column.Width = 150;
+            ID_Column = grvContato.Columns[2]; // Coluna Data Nascimento
+            ID_Column.Width = 75;
+            ID_Column = grvContato.Columns[3]; // Coluna CPF
+            ID_Column.Width = 75;
+            ID_Column = grvContato.Columns[6]; // Coluna Endereço
+            ID_Column.Width = 165;
 
             grvContato.Columns[7].Visible = false;
             grvContato.Columns[8].Visible = false;
@@ -216,8 +228,8 @@ namespace GerenciamentoContatos
 
         private void limparCadastro() 
         {
-            Controls.OfType<TextBox>().ToList().ForEach(t => t.Clear());
-            Controls.OfType<MaskedTextBox>().ToList().ForEach(t => t.Clear());
+            Controls.OfType<RadTextBox>().ToList().ForEach(t => t.Clear());
+            Controls.OfType<RadMaskedEditBox>().ToList().ForEach(t => t.ResetText());
 
             List<EstadoInfo> listaEstado = estadoBLL.Listar();
 
@@ -317,9 +329,11 @@ namespace GerenciamentoContatos
                 idEstado = Convert.ToInt32(grvContato.Rows[e.RowIndex].Cells[8].Value.ToString());
                 idCidade = Convert.ToInt32(grvContato.Rows[e.RowIndex].Cells[7].Value.ToString());                
 
+                DateTime data = Convert.ToDateTime(grvContato.Rows[e.RowIndex].Cells[2].Value.ToString());
+
                 txtNome.Text = grvContato.Rows[e.RowIndex].Cells[0].Value.ToString();
                 txtEmail.Text = grvContato.Rows[e.RowIndex].Cells[1].Value.ToString();
-                txtDtNasc.Text = grvContato.Rows[e.RowIndex].Cells[2].Value.ToString();
+                txtDtNasc.Text = data.Date.ToShortDateString();                
                 txtCPF.Text = grvContato.Rows[e.RowIndex].Cells[3].Value.ToString();
                 txtCidade.Text = grvContato.Rows[e.RowIndex].Cells[4].Value.ToString();
                 txtEndereco.Text = grvContato.Rows[e.RowIndex].Cells[6].Value.ToString();

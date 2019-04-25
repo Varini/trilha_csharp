@@ -4,3 +4,4 @@ C:\git\treinamentoleonardo\Trilha CSharp\GerenciamentoContatos.AutoModeling\bin\
 C:\git\treinamentoleonardo\Trilha CSharp\GerenciamentoContatos.AutoModeling\bin\Debug\Smart.Model.dll
 C:\git\treinamentoleonardo\Trilha CSharp\GerenciamentoContatos.AutoModeling\obj\Debug\AutoModeling.dll
 C:\git\treinamentoleonardo\Trilha CSharp\GerenciamentoContatos.AutoModeling\obj\Debug\AutoModeling.pdb
+C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.AutoModeling\obj\Debug\GerenciamentoContatos.AutoModeling.csprojResolveAssemblyReference.cache
