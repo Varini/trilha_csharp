@@ -305,6 +305,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblNome);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "frmContato";
             this.Text = "Gerenciamento de Contatos";
             this.Load += new System.EventHandler(this.carregarFrmContato);

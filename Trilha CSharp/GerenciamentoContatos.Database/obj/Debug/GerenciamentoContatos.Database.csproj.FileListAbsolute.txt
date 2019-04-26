@@ -1,6 +1,5 @@
-C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Database\bin\Debug\GerenciamentoContatos.Database.dll
-C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Database\bin\Debug\GerenciamentoContatos.Database.pdb
-C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Database\bin\Debug\Smart.Database.dll
-C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Database\obj\Debug\GerenciamentoContatos.Database.csprojResolveAssemblyReference.cache
-C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Database\obj\Debug\GerenciamentoContatos.Database.dll
-C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Database\obj\Debug\GerenciamentoContatos.Database.pdb
+C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Database\bin\Debug\GerenciamentoContatos.Database.dll
+C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Database\bin\Debug\GerenciamentoContatos.Database.pdb
+C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Database\bin\Debug\Smart.Database.dll
+C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Database\obj\Debug\GerenciamentoContatos.Database.dll
+C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Database\obj\Debug\GerenciamentoContatos.Database.pdb
