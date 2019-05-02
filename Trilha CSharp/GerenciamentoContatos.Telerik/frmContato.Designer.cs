@@ -51,6 +51,8 @@
             this.txtBusca = new Telerik.WinControls.UI.RadTextBox();
             this.lblFiltro = new System.Windows.Forms.Label();
             this.txtDtNasc = new Telerik.WinControls.UI.RadMaskedEditBox();
+            this.btnVisualizar = new Telerik.WinControls.UI.RadButton();
+            this.ckbAgruparPorUF = new Telerik.WinControls.UI.RadCheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.txtNome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCidade)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ddlEstado)).BeginInit();
@@ -61,6 +63,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.grvContato)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtBusca)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDtNasc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnVisualizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ckbAgruparPorUF)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNome
@@ -278,11 +282,30 @@
             this.txtDtNasc.TabStop = false;
             this.txtDtNasc.Text = "__/__/____";
             // 
+            // btnVisualizar
+            // 
+            this.btnVisualizar.Location = new System.Drawing.Point(598, 520);
+            this.btnVisualizar.Name = "btnVisualizar";
+            this.btnVisualizar.Size = new System.Drawing.Size(54, 24);
+            this.btnVisualizar.TabIndex = 16;
+            this.btnVisualizar.Text = "Visualizar";
+            this.btnVisualizar.Click += new System.EventHandler(this.visualizarRelatorio);
+            // 
+            // ckbAgruparPorUF
+            // 
+            this.ckbAgruparPorUF.Location = new System.Drawing.Point(661, 523);
+            this.ckbAgruparPorUF.Name = "ckbAgruparPorUF";
+            this.ckbAgruparPorUF.Size = new System.Drawing.Size(97, 18);
+            this.ckbAgruparPorUF.TabIndex = 17;
+            this.ckbAgruparPorUF.Text = "Agrupar Por UF";
+            // 
             // frmContato
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(769, 525);
+            this.ClientSize = new System.Drawing.Size(769, 553);
+            this.Controls.Add(this.ckbAgruparPorUF);
+            this.Controls.Add(this.btnVisualizar);
             this.Controls.Add(this.txtDtNasc);
             this.Controls.Add(this.lblFiltro);
             this.Controls.Add(this.txtBusca);
@@ -319,6 +342,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.grvContato)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtBusca)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDtNasc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnVisualizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ckbAgruparPorUF)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -348,6 +373,8 @@
         private System.Windows.Forms.Label lblFiltro;
         private Telerik.WinControls.UI.RadTextBox txtBusca;
         private Telerik.WinControls.UI.RadMaskedEditBox txtDtNasc;
+        private Telerik.WinControls.UI.RadButton btnVisualizar;
+        private Telerik.WinControls.UI.RadCheckBox ckbAgruparPorUF;
     }
 }
 

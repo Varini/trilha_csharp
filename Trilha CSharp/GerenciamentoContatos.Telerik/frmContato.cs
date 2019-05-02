@@ -17,6 +17,8 @@ namespace GerenciamentoContatos
 {
     public partial class frmContato : Form
     {
+        #region Gerenciamento de Contatos - Formulário Principal
+
         private HashSet<Control> camposVazios = new HashSet<Control>();        
         private int idContato = 0;
         private int idCidade = 0;
@@ -33,7 +35,12 @@ namespace GerenciamentoContatos
 
         private void carregarFrmContato(object sender, EventArgs e)
         {
-            List<EstadoInfo> listaEstado = estadoBLL.Listar();
+            List<EstadoInfo> listaEstado = new List<EstadoInfo>();
+
+            //using (EstadoBLL estadoBLL = new EstadoBLL())
+            //{
+            listaEstado = estadoBLL.Listar();
+            //}
 
             ddlEstado.Items.Clear();
             
@@ -64,9 +71,20 @@ namespace GerenciamentoContatos
 
                 CidadeContatoEstadoView novoCadastro = new CidadeContatoEstadoView();                
 
-                novoCadastro = prepararCadastro(false);                
-                novoCadastro.Contato.CdCidade.Value = cidadeBLL.Get(cidadeBLL.Inserir(novoCadastro.Cidade)).CdCidade.Value;                
+                novoCadastro = prepararCadastro(false);
+
+                //using (ContatoBLL contatoBLL = new ContatoBLL())
+                //{
+
+                //    using (CidadeBLL cidadeBLL = new CidadeBLL())
+                //    {
+                novoCadastro.Contato.CdCidade.Value = cidadeBLL.Get(cidadeBLL.Inserir(novoCadastro.Cidade)).CdCidade.Value;
+                //    }
+
                 contatoBLL.Inserir(novoCadastro.Contato);
+                //}
+
+                
 
                 carregarDados(String.Empty);
                 limparCadastro();
@@ -84,8 +102,15 @@ namespace GerenciamentoContatos
 
                 if (respostaUsuario == DialogResult.Yes)
                 {
-                    contatoBLL.Atualizar(idContato,prepararCadastro(true).Contato);
+                    //using (ContatoBLL contatoBLL = new ContatoBLL())
+                    //{
+                    contatoBLL.Atualizar(idContato, prepararCadastro(true).Contato);
+
+                    //    using (CidadeBLL cidadeBLL = new CidadeBLL())
+                    //    {                            
                     cidadeBLL.Atualizar(idCidade, prepararCadastro(true).Cidade);
+                    //    }                        
+                    //}
 
                     carregarDados(String.Empty);
                     limparCadastro();
@@ -100,9 +125,16 @@ namespace GerenciamentoContatos
                 DialogResult respostaUsuario = MessageBox.Show("Tem certeza que deseja excluir o contato?", "Confirma Exclusão", MessageBoxButtons.YesNo);
 
                 if (respostaUsuario == DialogResult.Yes)
-                {
+                {                    
+                    //using (ContatoBLL contatoBLL = new ContatoBLL())
+                    //{
                     contatoBLL.Deletar(idContato);
+
+                    //    using (CidadeBLL cidadeBLL = new CidadeBLL())
+                    //    {
                     cidadeBLL.Deletar(idCidade);
+                    //    }
+                    //}
 
                     carregarDados(String.Empty);
                     limparCadastro();
@@ -115,9 +147,14 @@ namespace GerenciamentoContatos
 
         }
 
-        private void carregarDados(string busca)
+        private DataTable carregarDados(string busca)
         {
-            List<ContatoInfo> listaContato = contatoBLL.Listar();
+            List<ContatoInfo> listaContato = new List<ContatoInfo>();            
+
+            //using (ContatoBLL contatoBLL = new ContatoBLL())
+            //{
+            listaContato = contatoBLL.Listar();
+            //}
             
             DataTable tabelaContatos = new DataTable();
 
@@ -139,8 +176,15 @@ namespace GerenciamentoContatos
                 CidadeInfo cidadeInfo = new CidadeInfo();
                 EstadoInfo estadoInfo = new EstadoInfo();
 
+                //using (CidadeBLL cidadeBLL = new CidadeBLL())
+                //{
                 cidadeInfo = cidadeBLL.Get(obj.CdCidade.Value);
+                //}
+
+                //using (EstadoBLL estadoBLL = new EstadoBLL())
+                //{
                 estadoInfo = estadoBLL.Get(obj.CdEstado.Value);
+                //}                
 
                 linhasContato[0] = obj.DsNome.Value;
                 linhasContato[1] = obj.DsEmail.Value;
@@ -189,6 +233,8 @@ namespace GerenciamentoContatos
             grvContato.Columns[7].Visible = false;
             grvContato.Columns[8].Visible = false;
             grvContato.Columns[9].Visible = false;
+
+            return tabelaContatos;
         }
 
         private CidadeContatoEstadoView prepararCadastro(bool alterar)
@@ -231,7 +277,12 @@ namespace GerenciamentoContatos
             Controls.OfType<RadTextBox>().ToList().ForEach(t => t.Clear());
             Controls.OfType<RadMaskedEditBox>().ToList().ForEach(t => t.ResetText());
 
-            List<EstadoInfo> listaEstado = estadoBLL.Listar();
+            List<EstadoInfo> listaEstado = new List<EstadoInfo>();
+
+            //using (EstadoBLL estadoBLL = new EstadoBLL())
+            //{
+            listaEstado = estadoBLL.Listar();
+            //}
 
             ddlEstado.Items.Clear();
 
@@ -347,5 +398,57 @@ namespace GerenciamentoContatos
                 MessageBox.Show("Selecione um contato!", "Aviso");
             }
         }
+
+        private void visualizarRelatorio(object sender, EventArgs e)
+        {            
+            List<ContatoInfo> listaContato = new List<ContatoInfo>();
+
+            using (ContatoBLL contatoBLL = new ContatoBLL())
+            {
+                listaContato = contatoBLL.Listar();
+            }            
+
+            frmRelatorio form = new frmRelatorio();
+
+            Telerik.Reporting.Report rpt = new Telerik.Reporting.Report();
+
+            if (!ckbAgruparPorUF.Checked)
+            {
+                rpt = new GerenciamentoContatos.rptContatos();
+
+                rpt.DataSource = carregarDados(txtBusca.Text);
+
+                rpt.PageSettings.PaperKind = System.Drawing.Printing.PaperKind.A4;
+
+                form.Width = 1000;
+
+                form.Height = 900;
+
+                form.StartPosition = FormStartPosition.CenterScreen;
+
+                form.Show();
+
+                form.CarregarRelatorio(rpt);
+            }
+            else
+            {
+                rpt = new GerenciamentoContatos.rptContatosAgrupado();
+
+                rpt.DataSource = carregarDados(txtBusca.Text);
+
+                rpt.PageSettings.PaperKind = System.Drawing.Printing.PaperKind.A4;
+
+                form.Width = 580;
+
+                form.Height = 350;
+
+                form.StartPosition = FormStartPosition.CenterScreen;
+
+                form.Show();
+
+                form.CarregarRelatorio(rpt);
+            }
+        }
     }
+    #endregion
 }

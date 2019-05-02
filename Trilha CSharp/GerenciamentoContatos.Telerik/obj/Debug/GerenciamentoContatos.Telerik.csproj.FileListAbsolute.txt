@@ -12,3 +12,6 @@ C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Telerik\obj\Debug
 C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Telerik\obj\Debug\GerenciamentoContatos.Telerik.csproj.GenerateResource.Cache
 C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Telerik\obj\Debug\Windows Forms - Exercício 1.exe
 C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Telerik\obj\Debug\Windows Forms - Exercício 1.pdb
+C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Telerik\obj\Debug\GerenciamentoContatos.frmRelatorio.resources
+C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Telerik\obj\Debug\GerenciamentoContatos.rptContatos.resources
+C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Telerik\obj\Debug\GerenciamentoContatos.rptContatosAgrupado.resources

@@ -1,4 +1,4 @@
-namespace GerenciamentoContatos.AutoModeling
+namespace GerenciamentoContatos
 {
     using System;
     using System.ComponentModel;
@@ -8,11 +8,11 @@ namespace GerenciamentoContatos.AutoModeling
     using Telerik.Reporting.Drawing;
 
     /// <summary>
-    /// Summary description for Report1.
+    /// Summary description for relatorioContatosAgrupado.
     /// </summary>
-    public partial class relatorioContatos : Telerik.Reporting.Report
+    public partial class rptContatosAgrupado : Telerik.Reporting.Report
     {
-        public relatorioContatos()
+        public rptContatosAgrupado()
         {
             //
             // Required for telerik Reporting designer support
