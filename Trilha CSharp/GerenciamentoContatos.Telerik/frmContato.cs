@@ -22,7 +22,7 @@ namespace GerenciamentoContatos
         private HashSet<Control> camposVazios = new HashSet<Control>();        
         private int idContato = 0;
         private int idCidade = 0;
-        private int idEstado = 0;
+        private int idEstado = 0;        
 
         private ContatoBLL contatoBLL = new ContatoBLL();
         private EstadoBLL estadoBLL = new EstadoBLL();
@@ -208,11 +208,14 @@ namespace GerenciamentoContatos
                 var linhas = tabelaContatos.AsEnumerable().Where(row => row.Field<String>("Nome").Contains(busca))
                                                 .OrderBy(row => row.Field<String>("Nome"));
 
+                //var linhas2 = listaContato.AsEnumerable().Where(row => row.DsNome.Value.Contains(busca))
+                //                                   .OrderBy(row => row.DsNome.Value);
+
                 foreach (var linha in linhas)
                     tabelaBusca.ImportRow(linha);
 
                 tabelaContatos = tabelaBusca;
-            }            
+            }
 
             tabelaContatos.AcceptChanges();
                         
@@ -347,6 +350,11 @@ namespace GerenciamentoContatos
         {
             string mensagemValidacao = String.Empty;
 
+            if (txtNome.Text != String.Empty && !Validacao.ValidaNome(txtNome.Text))
+            {
+                mensagemValidacao += "Nome completo inválido.\n";
+            }
+
             if (txtEmail.Text != String.Empty && !Validacao.ValidaEmail(txtEmail.Text))
             {
                 mensagemValidacao += "E-mail inválido.\n";                
@@ -357,9 +365,9 @@ namespace GerenciamentoContatos
                 mensagemValidacao += "Data de Nascimento inválida.\n";
             }
 
-            if (new String(txtCPF.Text.Where(Char.IsDigit).ToArray()) != String.Empty && !Validacao.ValidaCPF(txtCPF.Text)) 
+            if (new String(txtCPF.Text.Where(Char.IsDigit).ToArray()) != String.Empty && !Validacao.ValidaCPF(txtCPF.Text, idContato))
             {
-                mensagemValidacao += "Número do CPF inválido.\n";                
+                mensagemValidacao += "Número do CPF inválido ou já cadastrado.\n";                
             }
 
             if (mensagemValidacao != String.Empty)
@@ -420,9 +428,9 @@ namespace GerenciamentoContatos
 
                 rpt.PageSettings.PaperKind = System.Drawing.Printing.PaperKind.A4;
 
-                form.Width = 1000;
+                form.Width = 870;
 
-                form.Height = 900;
+                form.Height = 1000;
 
                 form.StartPosition = FormStartPosition.CenterScreen;
 
@@ -438,9 +446,9 @@ namespace GerenciamentoContatos
 
                 rpt.PageSettings.PaperKind = System.Drawing.Printing.PaperKind.A4;
 
-                form.Width = 580;
+                form.Width = 700;
 
-                form.Height = 350;
+                form.Height = 450;
 
                 form.StartPosition = FormStartPosition.CenterScreen;
 

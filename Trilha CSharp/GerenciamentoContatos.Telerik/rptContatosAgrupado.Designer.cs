@@ -52,6 +52,7 @@ namespace GerenciamentoContatos
             this.uf_estadoCaptionTextBox.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Cm(0.052916664630174637D), Telerik.Reporting.Drawing.Unit.Cm(0.052916664630174637D));
             this.uf_estadoCaptionTextBox.Name = "uf_estadoCaptionTextBox";
             this.uf_estadoCaptionTextBox.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(2D), Telerik.Reporting.Drawing.Unit.Cm(0.60000002384185791D));
+            this.uf_estadoCaptionTextBox.Style.TextAlign = Telerik.Reporting.Drawing.HorizontalAlign.Center;
             this.uf_estadoCaptionTextBox.StyleName = "Caption";
             this.uf_estadoCaptionTextBox.Value = "Estado";
             // 
@@ -61,6 +62,7 @@ namespace GerenciamentoContatos
             this.cd_contatoCaptionTextBox.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Cm(2.1058332920074463D), Telerik.Reporting.Drawing.Unit.Cm(0.052916664630174637D));
             this.cd_contatoCaptionTextBox.Name = "cd_contatoCaptionTextBox";
             this.cd_contatoCaptionTextBox.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(2D), Telerik.Reporting.Drawing.Unit.Cm(0.60000002384185791D));
+            this.cd_contatoCaptionTextBox.Style.TextAlign = Telerik.Reporting.Drawing.HorizontalAlign.Center;
             this.cd_contatoCaptionTextBox.StyleName = "Caption";
             this.cd_contatoCaptionTextBox.Value = "Código";
             // 
@@ -69,7 +71,8 @@ namespace GerenciamentoContatos
             this.ds_nomeCaptionTextBox.CanGrow = true;
             this.ds_nomeCaptionTextBox.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Cm(4.158750057220459D), Telerik.Reporting.Drawing.Unit.Cm(0.052916664630174637D));
             this.ds_nomeCaptionTextBox.Name = "ds_nomeCaptionTextBox";
-            this.ds_nomeCaptionTextBox.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(2D), Telerik.Reporting.Drawing.Unit.Cm(0.60000002384185791D));
+            this.ds_nomeCaptionTextBox.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(5.8412494659423828D), Telerik.Reporting.Drawing.Unit.Cm(0.60000002384185791D));
+            this.ds_nomeCaptionTextBox.Style.TextAlign = Telerik.Reporting.Drawing.HorizontalAlign.Center;
             this.ds_nomeCaptionTextBox.StyleName = "Caption";
             this.ds_nomeCaptionTextBox.Value = "Nome";
             // 
@@ -197,7 +200,7 @@ namespace GerenciamentoContatos
             this.ds_nomeDataTextBox.CanGrow = true;
             this.ds_nomeDataTextBox.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Cm(4.158750057220459D), Telerik.Reporting.Drawing.Unit.Cm(0.052916664630174637D));
             this.ds_nomeDataTextBox.Name = "ds_nomeDataTextBox";
-            this.ds_nomeDataTextBox.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(6.9412493705749512D), Telerik.Reporting.Drawing.Unit.Cm(0.60000002384185791D));
+            this.ds_nomeDataTextBox.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Cm(5.8412504196166992D), Telerik.Reporting.Drawing.Unit.Cm(0.60000002384185791D));
             this.ds_nomeDataTextBox.StyleName = "Data";
             this.ds_nomeDataTextBox.Value = "=Nome";
             // 

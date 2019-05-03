@@ -283,6 +283,11 @@ namespace GerenciamentoContatos
         {
             string mensagemValidacao = String.Empty;
 
+            if (txtNome.Text != String.Empty && !Validacao.ValidaNome(txtNome.Text))
+            {
+                mensagemValidacao += "Nome completo inválido.\n";
+            }
+
             if (txtEmail.Text != String.Empty && !Validacao.ValidaEmail(txtEmail.Text))
             {
                 mensagemValidacao += "E-mail inválido.\n";                
@@ -293,9 +298,9 @@ namespace GerenciamentoContatos
                 mensagemValidacao += "Data de Nascimento inválida.\n";
             }
 
-            if (txtCPF.MaskFull && !Validacao.ValidaCPF(txtCPF.Text)) 
+            if (txtCPF.MaskFull && !Validacao.ValidaCPF(txtCPF.Text, idContato)) 
             {
-                mensagemValidacao += "Número do CPF inválido.\n";                
+                mensagemValidacao += "Número do CPF inválido ou já cadastrado.\n";                
             }
 
             if (mensagemValidacao != String.Empty)

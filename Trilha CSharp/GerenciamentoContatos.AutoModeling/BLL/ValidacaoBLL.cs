@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using GerenciamentoContatos.Model;
+using Smart.Model;
 
 namespace GerenciamentoContatos.BLL
 {
     public static class Validacao
     {
-        public static bool ValidaCPF(string cpf)
+        public static bool ValidaCPF(string cpf, int idContato)
         {
             int[] multiplicador1 = new int[9] { 10, 9, 8, 7, 6, 5, 4, 3, 2 };
             int[] multiplicador2 = new int[10] { 11, 10, 9, 8, 7, 6, 5, 4, 3, 2 };
@@ -71,7 +72,23 @@ namespace GerenciamentoContatos.BLL
             else
                 resto = 11 - resto;
             digito = digito + resto.ToString();
-            return cpf.EndsWith(digito);
+
+            using (ContatoBLL contatoBLL = new ContatoBLL())
+            {
+                List<ContatoInfo> listaContatos = new List<ContatoInfo>();
+
+                contatoBLL.Filters.FilterFields.Add(new DbFilterEqual(ContatoInfo.GetDsCpf(cpf)));
+
+                listaContatos = contatoBLL.Listar();
+
+                int cpfExiste = 0;
+                    
+                cpfExiste = (listaContatos.Count() > 0) ? listaContatos.FirstOrDefault().CdContato.Value : cpfExiste;
+
+                return cpfExiste == idContato;
+
+                //return cpf.EndsWith(digito);
+            }            
         }
 
         public static bool ValidaEmail(string email)
@@ -90,13 +107,22 @@ namespace GerenciamentoContatos.BLL
         public static bool ValidaData(string data)
         {
             DateTime dt;
-            if (DateTime.TryParse(data, out dt) == true &&
-                dt.Year > 1900 &&
-                dt > DateTime.MinValue &&
-                dt < DateTime.Now)
-                return (true);
+
+            bool dataValida = DateTime.TryParse(data, out dt);
+
+            int idade = DateTime.Now.Year - dt.Year;
+
+            if (dataValida && idade >= 18 && idade <= 60 && dt > DateTime.MinValue && dt < DateTime.Now)
+                return true;
             else
-                return (false);
+                return false;
+        }
+
+        public static bool ValidaNome(string nome)
+        {
+            System.Text.RegularExpressions.Regex regex = new System.Text.RegularExpressions.Regex(@"^([A-Za-zÀ-ú]{2,}\s[A-Za-zÀ-ú]{1,}'?-?[A-Za-zÀ-ú]{2,}\s?([A-Za-zÀ-ú]{1,})?)");
+
+            return regex.IsMatch(nome);
         }
     }
 }

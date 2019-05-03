@@ -1,0 +1,9 @@
+C:\GIT\TreinamentoLeonardo\Trilha CSharp\TesteUnitario\bin\Debug\TesteUnitario.dll
+C:\GIT\TreinamentoLeonardo\Trilha CSharp\TesteUnitario\bin\Debug\TesteUnitario.pdb
+C:\GIT\TreinamentoLeonardo\Trilha CSharp\TesteUnitario\bin\Debug\AutoModeling.dll
+C:\GIT\TreinamentoLeonardo\Trilha CSharp\TesteUnitario\bin\Debug\Smart.Database.dll
+C:\GIT\TreinamentoLeonardo\Trilha CSharp\TesteUnitario\bin\Debug\Smart.Model.dll
+C:\GIT\TreinamentoLeonardo\Trilha CSharp\TesteUnitario\bin\Debug\AutoModeling.pdb
+C:\GIT\TreinamentoLeonardo\Trilha CSharp\TesteUnitario\obj\Debug\TesteUnitario.dll
+C:\GIT\TreinamentoLeonardo\Trilha CSharp\TesteUnitario\obj\Debug\TesteUnitario.pdb
+C:\GIT\TreinamentoLeonardo\Trilha CSharp\TesteUnitario\obj\Debug\GerenciamentoContatos.TesteUnitario.csprojResolveAssemblyReference.cache
