@@ -3,4 +3,3 @@ C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Database\bin\Debu
 C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Database\bin\Debug\Smart.Database.dll
 C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Database\obj\Debug\GerenciamentoContatos.Database.dll
 C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Database\obj\Debug\GerenciamentoContatos.Database.pdb
-C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Database\obj\Debug\GerenciamentoContatos.Database.csprojResolveAssemblyReference.cache

@@ -45,17 +45,12 @@ namespace GerenciamentoContatos
             }
             ddlEstado.SelectedIndex = 0;
             
-            carregarDados(String.Empty); 
-
-            foreach (DataGridViewBand band in grvContato.Columns)
-            {
-                band.ReadOnly = true;
-            }            
+            carregarDados(String.Empty);
         }
 
         private void cadastrarContato(object sender, EventArgs e)
         {
-            prepararValidacao();
+            prepararValidacao(false);
 
             if (idContato != 0)
             {
@@ -88,7 +83,7 @@ namespace GerenciamentoContatos
 
         private void alterarContato()
         {
-            prepararValidacao();            
+            prepararValidacao(false);            
 
             if (validarCampos() && camposVazios.Count == 0)
             {
@@ -155,7 +150,7 @@ namespace GerenciamentoContatos
 
             tabelaContatos.Columns.Add(new DataColumn("Nome"));
             tabelaContatos.Columns.Add(new DataColumn("E-mail"));
-            tabelaContatos.Columns.Add(new DataColumn("Data de Nascimento", typeof (DateTime)));
+            tabelaContatos.Columns.Add(new DataColumn("Data de Nascimento"));
             tabelaContatos.Columns.Add(new DataColumn("CPF"));
             tabelaContatos.Columns.Add(new DataColumn("Cidade"));
             tabelaContatos.Columns.Add(new DataColumn("UF"));
@@ -217,20 +212,19 @@ namespace GerenciamentoContatos
             grvContato.DataSource = tabelaContatos;
 
 
-            DataGridViewColumn ID_Column = grvContato.Columns[5]; // Coluna UF
-            ID_Column.Width = 30;
-            ID_Column = grvContato.Columns[1]; // Coluna E-mail
-            ID_Column.Width = 150;
-            ID_Column = grvContato.Columns[2]; // Coluna Data Nascimento
-            ID_Column.Width = 75;
-            ID_Column = grvContato.Columns[3]; // Coluna CPF
-            ID_Column.Width = 75;
-            ID_Column = grvContato.Columns[6]; // Coluna Endereço
-            ID_Column.Width = 165;
+            grvContato.Columns[0].Width = 100; // Coluna Nome
+            grvContato.Columns[1].Width = 180; // Coluna E-mail
+            grvContato.Columns[2].Width = 75; // Coluna Data Nascimento
+            grvContato.Columns[3].Width = 75; // Coluna CPF
+            grvContato.Columns[4].Width = 100; // Coluna Cidade
+            grvContato.Columns[5].Width = 30; // Coluna UF
+            grvContato.Columns[6].Width = 165; // Coluna Endereço            
 
-            grvContato.Columns[7].Visible = false;
-            grvContato.Columns[8].Visible = false;
-            grvContato.Columns[9].Visible = false;
+            grvContato.Columns[7].IsVisible = false;
+            grvContato.Columns[8].IsVisible = false;
+            grvContato.Columns[9].IsVisible = false;
+
+            grvContato.ReadOnly = true;
 
             return tabelaContatos;
         }
@@ -295,24 +289,26 @@ namespace GerenciamentoContatos
             idCidade = 0;
             idEstado = 0;
             btnExcluir.Visible = false;
+
+            prepararValidacao(true);
         }
 
-        private void prepararValidacao()
+        private void prepararValidacao(bool limpar)
         {
             eprValidacao.BlinkStyle = ErrorBlinkStyle.NeverBlink;
 
             txtNome.Tag = txtEmail.Tag = txtDtNasc.Tag = txtCPF.Tag = "Este campo é obrigatório.";
 
-            validarTextBox(txtNome, EventArgs.Empty);
-            validarTextBox(txtEmail, EventArgs.Empty);
-            validarMaskedTextBox(txtDtNasc, EventArgs.Empty);
-            validarMaskedTextBox(txtCPF, EventArgs.Empty);
+            validarTextBox(txtNome, EventArgs.Empty, limpar);
+            validarTextBox(txtEmail, EventArgs.Empty, limpar);
+            validarMaskedTextBox(txtDtNasc, EventArgs.Empty, limpar);
+            validarMaskedTextBox(txtCPF, EventArgs.Empty, limpar);
         }        
 
-        private void validarTextBox(object sender, EventArgs e)
+        private void validarTextBox(object sender, EventArgs e, bool limpar)
         {
             var textBox = sender as RadTextBox;
-            if (textBox.Text == String.Empty)
+            if (textBox.Text == String.Empty && !limpar)
             {
                 eprValidacao.SetError(textBox, (string)textBox.Tag);
                 camposVazios.Add(textBox);
@@ -324,10 +320,10 @@ namespace GerenciamentoContatos
             }
         }
 
-        private void validarMaskedTextBox(object sender, EventArgs e)
+        private void validarMaskedTextBox(object sender, EventArgs e, bool limpar)
         {
             var maskedTextBox = sender as RadMaskedEditBox;
-            if (new String(maskedTextBox.Text.Where(Char.IsDigit).ToArray()) == String.Empty)
+            if (new String(maskedTextBox.Text.Where(Char.IsDigit).ToArray()) == String.Empty && !limpar)
             {
                 eprValidacao.SetError(maskedTextBox, (string)maskedTextBox.Tag);
                 camposVazios.Add(maskedTextBox);
@@ -375,31 +371,9 @@ namespace GerenciamentoContatos
             return true;
         }
 
-        private void selecionarCelula(object sender, DataGridViewCellEventArgs e)
+        private void selecionarCelulaAntigo(object sender, DataGridViewCellEventArgs e)
         {
-            try
-            {
-                idContato = Convert.ToInt32(grvContato.Rows[e.RowIndex].Cells[9].Value.ToString());
-                idEstado = Convert.ToInt32(grvContato.Rows[e.RowIndex].Cells[8].Value.ToString());
-                idCidade = Convert.ToInt32(grvContato.Rows[e.RowIndex].Cells[7].Value.ToString());                
 
-                DateTime data = Convert.ToDateTime(grvContato.Rows[e.RowIndex].Cells[2].Value.ToString());
-
-                txtNome.Text = grvContato.Rows[e.RowIndex].Cells[0].Value.ToString();
-                txtEmail.Text = grvContato.Rows[e.RowIndex].Cells[1].Value.ToString();
-                txtDtNasc.Text = data.Date.ToShortDateString();                
-                txtCPF.Text = grvContato.Rows[e.RowIndex].Cells[3].Value.ToString();
-                txtCidade.Text = grvContato.Rows[e.RowIndex].Cells[4].Value.ToString();
-                txtEndereco.Text = grvContato.Rows[e.RowIndex].Cells[6].Value.ToString();
-
-                ddlEstado.SelectedIndex = System.Convert.ToInt32(grvContato.Rows[e.RowIndex].Cells[8].Value);
-
-                btnExcluir.Visible = true;
-            }
-            catch 
-            {
-                MessageBox.Show("Selecione um contato!", "Aviso");
-            }
         }
 
         private void visualizarRelatorio(object sender, EventArgs e)
@@ -450,6 +424,35 @@ namespace GerenciamentoContatos
                 form.Show();
 
                 form.CarregarRelatorio(rpt);
+            }
+        }
+
+        private void selecionarCelular(object sender, GridViewCellEventArgs e)
+        {
+            try
+            {
+                idContato = Convert.ToInt32(grvContato.Rows[e.RowIndex].Cells[9].Value.ToString());
+                idEstado = Convert.ToInt32(grvContato.Rows[e.RowIndex].Cells[8].Value.ToString());
+                idCidade = Convert.ToInt32(grvContato.Rows[e.RowIndex].Cells[7].Value.ToString());
+
+                DateTime data = Convert.ToDateTime(grvContato.Rows[e.RowIndex].Cells[2].Value.ToString());
+
+                txtNome.Text = grvContato.Rows[e.RowIndex].Cells[0].Value.ToString();
+                txtEmail.Text = grvContato.Rows[e.RowIndex].Cells[1].Value.ToString();
+                txtDtNasc.Text = data.Date.ToShortDateString();
+                txtCPF.Text = grvContato.Rows[e.RowIndex].Cells[3].Value.ToString();
+                txtCidade.Text = grvContato.Rows[e.RowIndex].Cells[4].Value.ToString();
+                txtEndereco.Text = grvContato.Rows[e.RowIndex].Cells[6].Value.ToString();
+
+                ddlEstado.SelectedIndex = System.Convert.ToInt32(grvContato.Rows[e.RowIndex].Cells[8].Value);
+
+                btnExcluir.Visible = true;
+
+                prepararValidacao(true);
+            }
+            catch
+            {
+                MessageBox.Show("Selecione um contato!", "Aviso");
             }
         }
     }

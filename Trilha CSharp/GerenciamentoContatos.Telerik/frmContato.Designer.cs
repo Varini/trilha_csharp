@@ -40,14 +40,14 @@
             this.txtCidade = new Telerik.WinControls.UI.RadTextBox();
             this.ddlEstado = new Telerik.WinControls.UI.RadDropDownList();
             this.txtEndereco = new Telerik.WinControls.UI.RadTextBox();
-            this.btnCadastrar = new System.Windows.Forms.Button();
-            this.btnLimpar = new System.Windows.Forms.Button();
+            this.btnCadastrar = new Telerik.WinControls.UI.RadButton();
+            this.btnLimpar = new Telerik.WinControls.UI.RadButton();
             this.txtCPF = new Telerik.WinControls.UI.RadMaskedEditBox();
             this.eprValidacao = new System.Windows.Forms.ErrorProvider(this.components);
             this.txtEmail = new Telerik.WinControls.UI.RadTextBox();
-            this.grvContato = new System.Windows.Forms.DataGridView();
-            this.btnExcluir = new System.Windows.Forms.Button();
-            this.btnBuscar = new System.Windows.Forms.Button();
+            this.grvContato = new Telerik.WinControls.UI.RadGridView();
+            this.btnExcluir = new Telerik.WinControls.UI.RadButton();
+            this.btnBuscar = new Telerik.WinControls.UI.RadButton();
             this.txtBusca = new Telerik.WinControls.UI.RadTextBox();
             this.lblFiltro = new System.Windows.Forms.Label();
             this.txtDtNasc = new Telerik.WinControls.UI.RadMaskedEditBox();
@@ -61,6 +61,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.eprValidacao)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grvContato)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grvContato.MasterTemplate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtBusca)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDtNasc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnVisualizar)).BeginInit();
@@ -180,8 +181,7 @@
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(75, 23);
             this.btnCadastrar.TabIndex = 8;
-            this.btnCadastrar.Text = "Cadastrar";
-            this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Text = "Cadastrar";            
             this.btnCadastrar.Click += new System.EventHandler(this.cadastrarContato);
             // 
             // btnLimpar
@@ -190,8 +190,7 @@
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(75, 23);
             this.btnLimpar.TabIndex = 10;
-            this.btnLimpar.Text = "Limpar";
-            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Text = "Limpar";            
             this.btnLimpar.Click += new System.EventHandler(this.acionarLimpar);
             // 
             // txtCPF
@@ -222,13 +221,12 @@
             // 
             // grvContato
             // 
-            this.grvContato.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.grvContato.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grvContato.Location = new System.Drawing.Point(12, 328);
             this.grvContato.Name = "grvContato";
-            this.grvContato.Size = new System.Drawing.Size(745, 185);
-            this.grvContato.TabIndex = 13;
-            this.grvContato.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.selecionarCelula);
+            this.grvContato.Size = new System.Drawing.Size(745, 189);
+            this.grvContato.TabIndex = 18;
+            this.grvContato.Text = "radGridView1";
+            this.grvContato.CellDoubleClick += new Telerik.WinControls.UI.GridViewCellEventHandler(this.selecionarCelular);            
             // 
             // btnExcluir
             // 
@@ -236,8 +234,7 @@
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(75, 23);
             this.btnExcluir.TabIndex = 9;
-            this.btnExcluir.Text = "Excluir";
-            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Text = "Excluir";            
             this.btnExcluir.Visible = false;
             this.btnExcluir.Click += new System.EventHandler(this.excluirContato);
             // 
@@ -247,8 +244,7 @@
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(75, 23);
             this.btnBuscar.TabIndex = 12;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Text = "Buscar";            
             this.btnBuscar.Click += new System.EventHandler(this.buscarCadastro);
             // 
             // txtBusca
@@ -339,6 +335,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtCPF)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.eprValidacao)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmail)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grvContato.MasterTemplate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grvContato)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtBusca)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDtNasc)).EndInit();
@@ -362,19 +359,20 @@
         private Telerik.WinControls.UI.RadTextBox txtCidade;
         private Telerik.WinControls.UI.RadDropDownList ddlEstado;
         private Telerik.WinControls.UI.RadTextBox txtEndereco;
-        private System.Windows.Forms.Button btnCadastrar;
-        private System.Windows.Forms.Button btnLimpar;
+        private Telerik.WinControls.UI.RadButton btnCadastrar;
+        private Telerik.WinControls.UI.RadButton btnLimpar;
         private Telerik.WinControls.UI.RadMaskedEditBox  txtCPF;
         private System.Windows.Forms.ErrorProvider eprValidacao;
-        private Telerik.WinControls.UI.RadTextBox txtEmail;
-        private System.Windows.Forms.DataGridView grvContato;
-        private System.Windows.Forms.Button btnBuscar;
-        private System.Windows.Forms.Button btnExcluir;
+        private Telerik.WinControls.UI.RadTextBox txtEmail;        
+        //private System.Windows.Forms.DataGridView grvContato;
+        private Telerik.WinControls.UI.RadGridView grvContato;
+        private Telerik.WinControls.UI.RadButton btnBuscar;
+        private Telerik.WinControls.UI.RadButton btnExcluir;
         private System.Windows.Forms.Label lblFiltro;
         private Telerik.WinControls.UI.RadTextBox txtBusca;
         private Telerik.WinControls.UI.RadMaskedEditBox txtDtNasc;
         private Telerik.WinControls.UI.RadButton btnVisualizar;
-        private Telerik.WinControls.UI.RadCheckBox ckbAgruparPorUF;
+        private Telerik.WinControls.UI.RadCheckBox ckbAgruparPorUF;        
     }
 }
 
