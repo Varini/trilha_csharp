@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using Smart.Database;
-using Smart.Model;
 using GerenciamentoContatos.Model;
 using GerenciamentoContatos.DAL;
 

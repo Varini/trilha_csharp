@@ -1,16 +1,13 @@
-﻿using GerenciamentoContatos.BLL;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using GerenciamentoContatos.BLL;
+using Smart.Model;
+
 
 namespace GerenciamentoContatos.TesteUnitario
 {
-    
-
     [TestClass()]
     public class TesteValidacoes
     {
-
-
         private TestContext testContextInstance;
 
         public TestContext TestContext
@@ -29,13 +26,17 @@ namespace GerenciamentoContatos.TesteUnitario
         [TestMethod()]
         public void ValidaCPFTest()
         {
-            ContatoBLL target = new ContatoBLL();
+            BusinessObject.DbConnAssemblyName = "GerenciamentoContatos.Database";
+            BusinessObject.DbConnClassPath = "GerenciamentoContatos.Database.DbConn";
+
             string cpf = "35988186882";
             int idContato = 1;
             bool expected = true;
             bool actual;
+
             actual = Validacao.ValidaCPF(cpf, idContato);
-            Assert.AreEqual(expected, actual, "CPF válido.");            
+
+            Assert.AreEqual(expected, actual, "Número do CPF inválido ou já cadastrado.");            
         }
 
         [TestMethod()]
@@ -44,8 +45,8 @@ namespace GerenciamentoContatos.TesteUnitario
             string data = "05/08/1988";
             bool expected = true;
             bool actual;
-            actual = Validacao.ValidaData(data);            
-            Assert.AreEqual(expected, actual, "Data válida.");            
+            actual = Validacao.ValidaData(data);
+            Assert.AreEqual(expected, actual, "Data de Nascimento inválida.");            
         }
 
         [TestMethod()]
@@ -55,7 +56,7 @@ namespace GerenciamentoContatos.TesteUnitario
             bool expected = true;
             bool actual;
             actual = Validacao.ValidaNome(nome);
-            Assert.AreEqual(expected, actual, "Nome está completo.");            
+            Assert.AreEqual(expected, actual, "Nome completo inválido.");            
         }
     }
 }

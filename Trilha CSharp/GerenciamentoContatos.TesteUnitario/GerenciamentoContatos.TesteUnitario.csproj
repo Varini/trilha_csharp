@@ -69,6 +69,15 @@
       <Project>{4F1298D6-D820-4B7D-8A7F-712A650AEC99}</Project>
       <Name>GerenciamentoContatos.AutoModeling</Name>
     </ProjectReference>
+    <ProjectReference Include="..\GerenciamentoContatos.Database\GerenciamentoContatos.Database.csproj">
+      <Project>{5e5f56c7-35fb-4a3e-ada9-fff5b57a9cbd}</Project>
+      <Name>GerenciamentoContatos.Database</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
