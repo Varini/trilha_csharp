@@ -1,0 +1,17 @@
+C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Telerik\bin\Debug\Windows Forms - Exercício 1.exe.config
+C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Telerik\bin\Debug\Windows Forms - Exercício 1.exe
+C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Telerik\bin\Debug\Windows Forms - Exercício 1.pdb
+C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Telerik\bin\Debug\AutoModeling.dll
+C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Telerik\bin\Debug\GerenciamentoContatos.Database.dll
+C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Telerik\bin\Debug\Smart.Database.dll
+C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Telerik\bin\Debug\Smart.Model.dll
+C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Telerik\bin\Debug\AutoModeling.pdb
+C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Telerik\bin\Debug\GerenciamentoContatos.Database.pdb
+C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Telerik\obj\Debug\GerenciamentoContatos.Telerik.csprojResolveAssemblyReference.cache
+C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Telerik\obj\Debug\GerenciamentoContatos.frmContato.resources
+C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Telerik\obj\Debug\GerenciamentoContatos.Telerik.csproj.GenerateResource.Cache
+C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Telerik\obj\Debug\Windows Forms - Exercício 1.exe
+C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Telerik\obj\Debug\Windows Forms - Exercício 1.pdb
+C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Telerik\obj\Debug\GerenciamentoContatos.frmRelatorio.resources
+C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Telerik\obj\Debug\GerenciamentoContatos.rptContatos.resources
+C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.Telerik\obj\Debug\GerenciamentoContatos.rptContatosAgrupado.resources
