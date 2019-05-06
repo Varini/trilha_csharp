@@ -9,3 +9,4 @@ Treinamento - Trilha CSharp:
 	4 - Auto Modeling (Exercício 7)
 	5 - Relatórios Telerik (Exercícios 8, 9, 10)
 	6 - Teste Unitário (Exercício 11)
+	6 - Web API (Exercício 12)
