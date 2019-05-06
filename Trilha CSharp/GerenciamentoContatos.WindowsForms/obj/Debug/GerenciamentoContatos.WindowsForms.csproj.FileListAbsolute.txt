@@ -1,14 +1,22 @@
-C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\Windows Forms - Exercício 1.exe.config
-C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\Windows Forms - Exercício 1.exe
-C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\Windows Forms - Exercício 1.pdb
-C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\AutoModeling.dll
-C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\GerenciamentoContatos.Database.dll
-C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\Smart.Database.dll
-C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\Smart.Model.dll
-C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\AutoModeling.pdb
-C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\GerenciamentoContatos.Database.pdb
-C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\obj\Debug\GerenciamentoContatos.WindowsForms.csprojResolveAssemblyReference.cache
-C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\obj\Debug\GerenciamentoContatos.frmContato.resources
-C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\obj\Debug\GerenciamentoContatos.WindowsForms.csproj.GenerateResource.Cache
-C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\obj\Debug\Windows Forms - Exercício 1.exe
-C:\git\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\obj\Debug\Windows Forms - Exercício 1.pdb
+C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\Windows Forms - Exercício 1.exe.config
+C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\Windows Forms - Exercício 1.exe
+C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\Windows Forms - Exercício 1.pdb
+C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\AutoModeling.dll
+C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\GerenciamentoContatos.Database.dll
+C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\Newtonsoft.Json.dll
+C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\Smart.Database.dll
+C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\Smart.Model.dll
+C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\System.Net.Http.Formatting.dll
+C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\System.Web.Http.dll
+C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\System.Web.Http.WebHost.dll
+C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\AutoModeling.pdb
+C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\GerenciamentoContatos.Database.pdb
+C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\Newtonsoft.Json.xml
+C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\System.Net.Http.Formatting.xml
+C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\System.Web.Http.xml
+C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\bin\Debug\System.Web.Http.WebHost.xml
+C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\obj\Debug\GerenciamentoContatos.WindowsForms.csprojResolveAssemblyReference.cache
+C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\obj\Debug\GerenciamentoContatos.frmContato.resources
+C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\obj\Debug\GerenciamentoContatos.WindowsForms.csproj.GenerateResource.Cache
+C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\obj\Debug\Windows Forms - Exercício 1.exe
+C:\GIT\TreinamentoLeonardo\Trilha CSharp\GerenciamentoContatos.WindowsForms\obj\Debug\Windows Forms - Exercício 1.pdb
