@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciamentoContatos.AutoM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciamentoContatos.Telerik", "GerenciamentoContatos.Telerik\GerenciamentoContatos.Telerik.csproj", "{DA092EB7-FF44-4231-B31F-068925F78F9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciamentoContatos.TesteUnitario", "TesteUnitario\GerenciamentoContatos.TesteUnitario.csproj", "{30BC2B44-01C0-467F-8523-4AFEBC8AAC38}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciamentoContatos.TesteUnitario", "GerenciamentoContatos.TesteUnitario\GerenciamentoContatos.TesteUnitario.csproj", "{30BC2B44-01C0-467F-8523-4AFEBC8AAC38}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
