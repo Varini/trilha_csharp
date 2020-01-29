@@ -1,6 +1,6 @@
-#Projetos de Treinamento
+#Projetos
 
-Treinamento - Trilha CSharp:
+Trilha CSharp:
 
 	Itens
 	- Projeto Inicial (Exercício 1)
