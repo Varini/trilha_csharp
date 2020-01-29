@@ -1,6 +1,6 @@
 # Projetos
 
- - Trilha CSharp
+-Trilha CSharp
 
 Itens:
 * Projeto Inicial
